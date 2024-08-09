@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffff00, #ffcc00);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 255, 0, 0.7);
+    animation: pulsate 1.5s infinite;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.planet-1 {
+    width: 10px;
+    height: 10px;
+    background: #888;
+}
+
+.planet-2 {
+    width: 15px;
+    height: 15px;
+    background: #ff6f61;
+}
+
+.planet-3 {
+    width: 20px;
+    height: 20px;
+    background: #4a90e2;
+}
+
+.planet-4 {
+    width: 25px;
+    height: 25px;
+    background: #f4a300;
+}
+
+.planet-5 {
+    width: 30px;
+    height: 30px;
+    background: #8e44ad;
+}
+
+.planet-6 {
+    width: 35px;
+    height: 35px;
+    background: #2ecc71;
+}
+
+.planet-7 {
+    width: 40px;
+    height: 40px;
+    background: #e67e22;
+}
+
+.planet-8 {
+    width: 45px;
+    height: 45px;
+    background: #3498db;
+}
+
+.planet-9 {
+    width: 50px;
+    height: 50px;
+    background: #9b59b6;
+}
+
+.orbit-1 {
+    width: 150px;
+    height: 150px;
+    animation: orbit 10s linear infinite;
+}
+
+.orbit-2 {
+    width: 200px;
+    height: 200px;
+    animation: orbit 15s linear infinite;
+}
+
+.orbit-3 {
+    width: 250px;
+    height: 250px;
+    animation: orbit 20s linear infinite;
+}
+
+.orbit-4 {
+    width: 300px;
+    height: 300px;
+    animation: orbit 25s linear infinite;
+}
+
+.orbit-5 {
+    width: 350px;
+    height: 350px;
+    animation: orbit 30s linear infinite;
+}
+
+.orbit-6 {
+    width: 400px;
+    height: 400px;
+    animation: orbit 35s linear infinite;
+}
+
+.orbit-7 {
+    width: 450px;
+    height: 450px;
+    animation: orbit 40s linear infinite;
+}
+
+.orbit-8 {
+    width: 500px;
+    height: 500px;
+    animation: orbit 45s linear infinite;
+}
+
+.orbit-9 {
+    width: 550px;
+    height: 550px;
+    animation: orbit 50s linear infinite;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 50px rgba(255, 255, 0, 0.7);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 80px rgba(255, 255, 0, 0.9);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 50px rgba(255, 255, 0, 0.7);
+    }
+}
